@@ -31,8 +31,7 @@ public class CategoriaResources {
 		return ResponseEntity.ok().body(obj);
 
 	}
-	
-	
+
 	@RequestMapping
 	public List<Categoria> findAll(){
 		List<Categoria> categoria = service.Listar();
