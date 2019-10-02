@@ -27,7 +27,7 @@ public class ClienteResources {
 
 	}
 
-	@RequestMapping
+	@RequestMapping(method = RequestMethod.GET)
 	public List<Cliente> findAll(){
 		List<Cliente> cliente = service.Listar();
 		return cliente;

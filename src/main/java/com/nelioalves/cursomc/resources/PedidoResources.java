@@ -28,7 +28,7 @@ public class PedidoResources {
 
 	}
 
-	@RequestMapping
+	@RequestMapping(method = RequestMethod.GET)
 	public List<Pedido> findAll(){
 		List<Pedido> categoria = service.Listar();
 		return categoria;
